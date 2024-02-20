@@ -9,7 +9,6 @@ import jakarta.validation.constraints.NotBlank;
 @Table(name = "user_table")
 public class User extends DefaultEntity{
     
-    @NotBlank(message = "O username não pode estar em branco")
     @Column(unique = true)
     private String username;
     
